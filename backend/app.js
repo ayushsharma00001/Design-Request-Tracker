@@ -8,10 +8,7 @@ const app = express();
 const __dirname = path.resolve();
 
 
-app.use(cors({
-  origin: "https://request-tracker-yocu.onrender.com",
-  credentials: true,
-}));
+app.use(cors());
 
 
 app.use(express.urlencoded({ extended: true }));
